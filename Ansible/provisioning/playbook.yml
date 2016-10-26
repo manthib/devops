@@ -1,0 +1,11 @@
+---
+- name: Install Nginx SQlite Supervisor Gunicorn & Flask
+  hosts: all
+  remote_user: root
+  
+  roles:
+    - role: nginx
+    - role: Sqlite
+    - role: Supervisord
+    - role: Gunicorn
+    - role: Flask

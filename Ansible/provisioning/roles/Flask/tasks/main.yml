@@ -1,0 +1,6 @@
+- name: Install flask with pip
+  pip: >-
+    name=flask
+    version={{flask_vers}}
+    state=present
+    editable=false
